@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Gemini Chatbot</title>
+    <link rel="stylesheet" href="asset/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+    />
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.7.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
+
+     <!-- font faimly -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet"> 
+
+     <script src="https://kit.fontawesome.com/0de4f08348.js" crossorigin="anonymous"></script>
+
+  </head>
+
+  <body>
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg navbar-light py-3">
+        <h2 class="px-5 logo">
+          <a href="index.html"><span class="text-primary">Ki</span>Yan</a>
+          <!-- <b>
+            <a class="navbar-brand" href="index.html">Kiyan</a>
+          </b> -->
+        </h2>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="pages/about.html">About</a>
+            </li>
+            <!-- <li class="nav-item">
+              <a class="nav-link" href="landingpage.html">About</a>
+            </li> -->
+          </ul>
+          <span id="current-user" class="navbar-text text-success font-weight-bold mr-3"></span>
+          <form class="form-inline my-2 my-lg-0">
+            <button onclick="logout()" class="btn btn-danger logout-btn">
+              Logout
+            </button>
+          </form>
+        </div>
+      </nav>
+    </div>
+    <div class="main">
+      <div class="chat-container">
+        <div class="chat-header">
+          <h2 class="logo text-left text-white">🤖<span class="text-info"> Kiyan</span> Here...!</h2>
+        </div>
+
+        <div class="chat-body" id="chat-body">
+          <div class="message bot">
+            <div class="avatar">🤖</div>
+            <div class="text">Hi there! How can I help you? 😉</div>
+          </div>
+        </div>
+
+        <div class="chat-input">
+          
+          <input
+            type="text"
+            id="user-input"
+            placeholder="Type your message..."
+          />
+          <button id="send-btn-microphone"><i class="fa-solid fa-microphone"></i></button>
+          <button id="send-btn"><i class="fa-solid fa-paper-plane"></i></button>
+        </div>
+        <!-- <div class="chat-input">
+      <input type="text" id="user-input" placeholder="Type your message..." />
+      <button id="send-btn">Send</button>
+      <button id="copy-btn" title="Copy Chat">📋</button>
+      <button id="speak-btn" title="Speak Message">🔊</button>
+      <button id="pdf-btn" title="Export to PDF">📄</button>
+    </div> -->
+      </div>
+    </div>
+    <div class="container-fluid bg-dark py-2 text-white text-center">
+      <b class="">All Rights Reserved Copyright 2025</b>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const currentUser = localStorage.getItem("currentUser");
+      
+        if (currentUser) {
+          document.getElementById("current-user").textContent = `👤 ${currentUser}`;
+        }
+      });
+    
+      function logout() {
+        localStorage.removeItem("isLoggedIn");
+        localStorage.removeItem("currentUser");
+        window.location.href = "pages/login.html"; // redirect to login page
+      }
+    </script>
+    <script src="asset/js/script.js"></script>
+  </body>
+</html>

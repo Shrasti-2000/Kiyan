@@ -1,0 +1,106 @@
+.logo{
+  letter-spacing: 2px;
+  font-size: 30px;
+  font-weight: 700;
+  color: rgb(22, 22, 22);
+  font-family: "Lilita One", sans-serif;
+}
+.logo a{
+  color : rgb(22, 22, 22);
+  text-decoration: none;
+}
+#nav{
+    position: static;
+    top: 0;
+    left: 0;
+    background-color: rgba(226, 226, 226, 0.719);
+    box-shadow: rgba(17, 17, 26, 0.1) 0px 1px 0px;
+}
+#about{
+    padding-top: 84px;
+    background: #6ac2e6;
+    background: linear-gradient(90deg, rgba(106, 194, 230, 1) 0%, rgba(99, 224, 151, 1) 50%, rgba(245, 229, 88, 1) 100%);
+}
+#about h2{
+    font-size: 55px;
+    font-weight: 700;
+    padding-top: 100px;
+}
+#about button{
+    padding: 10px 30px;
+    font-weight: 600;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+    background-color: antiquewhite;
+}
+#about img{
+    text-align: right;
+}
+#about-details{
+    padding: 100px 0;
+
+}
+#about-details h2{
+    font-size: 40px;
+    font-weight: 700;
+    /* padding-top: 50px; */
+}
+#about-details img{
+    height: 330px;
+    /* width: ; */
+}
+#about-content{
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.18) 0px 2px 4px;
+}
+/* footer */
+
+#footer-cf{
+    color: white;
+    background: rgb(2,1,24);
+    background: linear-gradient(90deg, rgba(2,1,24,1) 0%, rgba(1,1,46,1) 35%, rgba(0,0,0,1) 100%);
+    /* background: #6ac2e6; */
+    /* background: linear-gradient(90deg, rgb(6, 29, 39) 0%, rgb(7, 46, 24) 50%, rgb(11, 34, 70) 100%); */
+
+}
+#footer-cf h2{
+    font-size: 30px;
+    line-height: 100px;
+    font-weight: 700;
+    font-family: "Anton", sans-serif;
+}
+#footer-cf h4{
+    line-height: 60px;
+    font-size: 20px;
+    font-weight: 700;
+}
+#footer-cf ul{
+    height: auto;
+    width: 40%;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+}
+#footer-cf ul li a{
+    font-size: 22px;
+    color: white;
+}
+#footer-cf ul li a:hover{
+    transition: 0.5s;
+    color: rgb(53, 255, 255);
+}
+#footer-cf #form input{
+    width: 70%;
+    margin-right: 4%;
+    display: inline-block;
+}
+#footer-cf #form button{
+    width: 26%;
+    margin-top: -6px;
+    font-weight: 700;
+    display: inline-block;
+}
+#copyright{
+    font-weight: 700;
+    color: white;
+    background-color: black;
+}

@@ -1,0 +1,24 @@
+#login-main{
+    padding: 90px 0;
+}
+.col-main{
+    height: auto;
+    width: 38%;
+    border-radius: 5px;
+    background-color: rgb(221, 220, 220);
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+.col-main a{
+    text-decoration: none;
+    color:rgb(75, 74, 74);
+}
+#singup{
+    display: none;
+}
+body{
+    /* background: url('../img/bg2.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%; */
+    background: #EEAECA;
+background: radial-gradient(circle, rgba(238, 174, 202, 1) 0%, rgba(148, 187, 233, 1) 100%);
+}

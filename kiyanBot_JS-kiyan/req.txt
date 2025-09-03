@@ -1,0 +1,7 @@
+npm init -y
+npm install express body-parser cors dotenv @google/generative-ai
+npm install -g nodemon
+nodemon gemini_server.js
+npm install @google/generative-ai
+npm install express cors dotenv @google/genai
+node gemini_server.js
